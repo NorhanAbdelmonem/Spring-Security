@@ -1,4 +1,4 @@
-📌My Spring Security Guide<img width="1536" height="1024" alt="authentication-flow" src="https://github.com/user-attachments/assets/3829abc4-4d57-452f-a1a1-cfca4fb27a2c" />
+
 
 
 🔐 What is Spring Security?
@@ -147,6 +147,7 @@ The user requests a protected endpoint (e.g., /api/home) with their JWT.
 
 📍 How Does It Work?
 
+
 JwtAuthenticationFilter validates the JWT. If valid, the security context is set up with the user’s roles. Spring Security checks if the user’s roles allow access to the endpoint. Access is granted or denied accordingly.
 
 🗯️ Components Involved: JwtAuthenticationFilter, UserDetails.
@@ -157,3 +158,4 @@ Signup: User submits data → Password hashed → Saved to database.
 Login: Credentials submitted → AuthenticationManager verifies → JWT generated.
 
 Access Resource: JWT sent → JwtAuthenticationFilter validates → Access granted/denied.
+<img width="1536" height="1024" alt="authentication-flow" src="https://github.com/user-attachments/assets/3829abc4-4d57-452f-a1a1-cfca4fb27a2c" />
